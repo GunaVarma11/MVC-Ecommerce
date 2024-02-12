@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Products";
+    var LapItem = ViewBag.details;
+}
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device=width" />
+    <title>Products</title>
+    <link href="~/Content/Background.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h2>Details</h2>
+        <table>
+            <tr>
+
+                <td>ProductId</td>
+                <td>@LapItem.ProductId</td>
+            </tr>
+            <tr>
+                <td>Brand</td>
+                <td>@LapItem.Brand</td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td>@LapItem.Model</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>@LapItem.Price</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td>@LapItem.Storage</td>
+            </tr>
+        </table>
+        <button>@Html.ActionLink("Back to List", "Submit", "Products")</button>
+    </div>
+</body>
